@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale1.0">
-    <title>1.Google Form(Basic)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form (Basic)</title>
     <link rel="stylesheet" href="style.css">
-    <h1>1.Google Form(Basic)</h1>
-    </head>
-    <body>
-    <div class="Google Form(Basic)">
-    <label class="Full- Name">Full Name</label>
-    <br>
-    <input type="text" placeholder="Enter your name"/>
-    <br>
-    <label id="Email"> Email</label>
-    <br>
-    <input type="text" placeholder="Enter your email"/>
-    <br>
-    <label id="Feedback">Feedback</label>
-    <br>
-    <input type="text" placeholder="Write your feedback"/>
-    <br>
-    <label>Rate this form</label><br>
-    <input type="radio" id="good" name="rating" value="Good">
-    <label>Good</label>
-    <input type="radio" id="average" name="rating" value="average">
-    <label>Average</label>
-    <input type="radio" id="poor" name="rating" value="poor">
-    <label>Poor</label>
-    <div>
-    <button class="submit-buttton">submit</button>
-    </div>
-    
-    </body>
-     </html>
+</head>
+
+<body>
+
+    <label class="google-form-basic">
+     <h1>Google Form (Basic)</h1>
+        <form action="#" method="post" novalidate>
+            <label for="full-name">Full Name</label>
+            <input id="full-name" name="full-name" type="text" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email" required>
+
+            <label for="feedback">Feedback</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Write your feedback"></textarea>
+
+            <fieldset class="rating">
+                <legend>Rate this form</legend>
+                <div class="radio-group">
+                    <input type="radio" id="good" name="rating" value="good">
+                    <label for="good">Good</label>
+
+                    <input type="radio" id="average" name="rating" value="average">
+                    <label for="average">Average</label>
+
+                    <input type="radio" id="poor" name="rating" value="poor">
+                    <label for="poor">Poor</label>
+                </div>
+            </fieldset>
+
+            <div class="actions">
+                <button type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
